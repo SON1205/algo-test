@@ -3,6 +3,13 @@
 ## Data Structure
 
 ## Algorithm
+### Sort
+* MergeSort
+* QuickSort
+### Exhuastive Search
+* Subset
+* Permutation
+* Combination
 
 ## Problem Solving
 - [BOJ](https://www.acmicpc.net/)
