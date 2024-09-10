@@ -10,6 +10,7 @@
 * Subset
 * Permutation
 * Combination
+* Next Permutation
 
 ## Problem Solving
 - [BOJ](https://www.acmicpc.net/)
