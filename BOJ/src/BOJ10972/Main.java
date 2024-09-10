@@ -1,14 +1,18 @@
-package exhausitiveSearch;
+package BOJ10972;
 
-import java.util.Arrays;
+import java.util.*;
 
-/*
- * 뒤쪽부터 탐색하면서 내림차순의 꼭대기 찾기
- * 그 꼭대기 앞과 수보다 큰 수 골라서 교환
- */
-public class NextPermutation {
+public class Main {
 	public static void main(String[] args) {
-		int[] arr = {2, 1, 3};
+		Scanner sc = new Scanner(System.in);
+        
+        int N = sc.nextInt();
+        
+        int[] arr = new int[N];
+        
+        for (int i = 0; i < N; i++) {
+            arr[i] = sc.nextInt();
+        }
 		
 		nextPermutation(arr);
 	}
@@ -21,6 +25,7 @@ public class NextPermutation {
 		}
 		
 		if (idx <= 0) {
+            System.out.println(-1);
 			return;
 		}
 		
@@ -33,7 +38,12 @@ public class NextPermutation {
 		
 		Arrays.sort(arr, idx, arr.length);
 		
-		System.out.println(Arrays.toString(arr));
+		StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < arr.length; i++) {
+            sb.append(arr[i]).append(" ");
+        }
+        
+        System.out.print(sb);
 	}
 	
 	private static void swap(int[] arr, int i, int j) {
