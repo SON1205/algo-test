@@ -13,6 +13,7 @@
 * Next Permutation
 
 ## SQL
+* SELECT
 
 ## Problem Solving
 - [BOJ](https://www.acmicpc.net/)
