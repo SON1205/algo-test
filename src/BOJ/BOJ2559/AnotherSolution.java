@@ -28,3 +28,4 @@ public class AnotherSolution {
         System.out.println(result);
     }
 }
+
